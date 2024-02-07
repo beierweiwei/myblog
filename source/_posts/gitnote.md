@@ -25,3 +25,10 @@ tag: git
 * `git branch <name>` 创建分支
 * `git merge <name>` 当前分支与某分支合并
 * `git branch -d <name>` 删除分支 
+
+### cherry-pick操作
+* `git cherry-pick <HashA> <HashB>`
+* `git cherry-pick <HashA>..<HashB>`，选择A-B之间的系列提交，不包含A
+* `git cherry-pick <HashA>^..<HashB>`，选择A-B之间的系列提交，包含A
+* `git cherry-pick --continue` 冲突时，解决冲突后继续.
+
